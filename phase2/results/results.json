@@ -1,0 +1,1945 @@
+{
+  "dataset": "Tongji palmprint database",
+  "root": "data/tongji/ROI",
+  "layout": "tongji",
+  "generated": "2026-10-18T18:32:23",
+  "palms": 600,
+  "probes": 11400,
+  "groups": {
+    "cross": {
+      "probes": 6000,
+      "genuine": 6000,
+      "impostor": 3594000
+    },
+    "same": {
+      "probes": 5400,
+      "genuine": 5400,
+      "impostor": 3234600
+    }
+  },
+  "main_group": "cross",
+  "gabor_omega": {
+    "gab1": 0.5,
+    "gab2": 0.6,
+    "gab3": 0.6
+  },
+  "gabor_tuning": [
+    {
+      "omega": 0.15,
+      "session1": {
+        "gab1": {
+          "eer": 0.013333333333333334,
+          "dprime": 4.779123754773878
+        },
+        "gab2": {
+          "eer": 0.01338974358974359,
+          "dprime": 4.652841083612366
+        },
+        "gab3": {
+          "eer": 0.013333333333333334,
+          "dprime": 5.146741520262008
+        }
+      }
+    },
+    {
+      "omega": 0.2,
+      "session1": {
+        "gab1": {
+          "eer": 0.004166666666666667,
+          "dprime": 5.280000687248661
+        },
+        "gab2": {
+          "eer": 0.0044803006739243135,
+          "dprime": 5.178244877619541
+        },
+        "gab3": {
+          "eer": 0.005,
+          "dprime": 6.119737063604157
+        }
+      }
+    },
+    {
+      "omega": 0.25,
+      "session1": {
+        "gab1": {
+          "eer": 0.0016666666666666668,
+          "dprime": 5.502469143869217
+        },
+        "gab2": {
+          "eer": 0.0023048780487804877,
+          "dprime": 5.43127641062186
+        },
+        "gab3": {
+          "eer": 0.002114408929477423,
+          "dprime": 6.876892159575445
+        }
+      }
+    },
+    {
+      "omega": 0.3,
+      "session1": {
+        "gab1": {
+          "eer": 0.0008333333333333334,
+          "dprime": 5.5170390843982
+        },
+        "gab2": {
+          "eer": 0.0008333333333333334,
+          "dprime": 5.457755508040069
+        },
+        "gab3": {
+          "eer": 0.0008333333333333334,
+          "dprime": 7.493757589107979
+        }
+      }
+    },
+    {
+      "omega": 0.4,
+      "session1": {
+        "gab1": {
+          "eer": 0.0008333333333333334,
+          "dprime": 5.1521657699767305
+        },
+        "gab2": {
+          "eer": 6.25e-05,
+          "dprime": 5.160972277263015
+        },
+        "gab3": {
+          "eer": 2.7824151363383416e-05,
+          "dprime": 8.210884675393247
+        }
+      }
+    },
+    {
+      "omega": 0.5,
+      "session1": {
+        "gab1": {
+          "eer": 8.735440931780365e-05,
+          "dprime": 4.550785945122855
+        },
+        "gab2": {
+          "eer": 5.564830272676683e-06,
+          "dprime": 4.573608504127429
+        },
+        "gab3": {
+          "eer": 6.956037840845854e-06,
+          "dprime": 8.100954789993757
+        }
+      }
+    },
+    {
+      "omega": 0.6,
+      "session1": {
+        "gab1": {
+          "eer": 0.0002603305785123967,
+          "dprime": 3.9533905639836995
+        },
+        "gab2": {
+          "eer": 0.0,
+          "dprime": 3.9871091794124935
+        },
+        "gab3": {
+          "eer": 0.0,
+          "dprime": 7.305280402540767
+        }
+      }
+    },
+    {
+      "omega": 0.7,
+      "session1": {
+        "gab1": {
+          "eer": 0.0002045328911000553,
+          "dprime": 3.466202124464356
+        },
+        "gab2": {
+          "eer": 2.7777777777777775e-06,
+          "dprime": 3.499541278199787
+        },
+        "gab3": {
+          "eer": 0.0,
+          "dprime": 6.386608976825186
+        }
+      }
+    },
+    {
+      "omega": 0.8,
+      "session1": {
+        "gab1": {
+          "eer": 0.0008333333333333334,
+          "dprime": 3.04819018977924
+        },
+        "gab2": {
+          "eer": 3.183831672203765e-05,
+          "dprime": 3.077731646754693
+        },
+        "gab3": {
+          "eer": 1.3912075681691708e-05,
+          "dprime": 5.3942674642059
+        }
+      }
+    }
+  ],
+  "gabor_tuning_probes": 1200,
+  "labels": {
+    "exp1": "Exp 1  MFRAT, pixel-to-pixel, 1 template",
+    "exp2": "Exp 2  + enlarged training set (7 templates)",
+    "rloc": "Exp 3  + cross neighbourhood  = RLOC",
+    "exp4": "Exp 4  3x3 square instead of cross",
+    "align1": "RLOC with 1 template instead of 7",
+    "gab1": "Gabor, pixel-to-pixel, 1 template",
+    "gab2": "Gabor + enlarged training set",
+    "gab3": "Gabor + enlarged set + cross",
+    "oneway": "RLOC, one direction only (no eq. 9 maximum)",
+    "shift1": "RLOC, +/-1 shift search instead of +/-2",
+    "first": "RLOC as we first built it (+/-1 shift, one direction)",
+    "han": "Han et al. 2003, Sobel features",
+    "han_morph": "Han et al. 2003, morphology features"
+  },
+  "results": {
+    "exp1": {
+      "cross": {
+        "genuine": 6000,
+        "impostor": 3594000,
+        "eer": 0.0026666666666666666,
+        "threshold": 0.2633330022943193,
+        "dprime": 4.37616267136897,
+        "frr_at_far_0.01": 0.0018333333333333333,
+        "threshold_at_far_0.01": 0.2522222101688385,
+        "frr_at_far_0.001": 0.005,
+        "threshold_at_far_0.001": 0.2709677517414093,
+        "frr_at_far_0.0001": 0.0105,
+        "threshold_at_far_0.0001": 0.2864583432674408,
+        "confusion_eer": {
+          "threshold": 0.2633330022943193,
+          "genuine_accepted": 5984,
+          "genuine_rejected": 16,
+          "impostor_accepted": 9583,
+          "impostor_rejected": 3584417,
+          "far": 0.002666388425153033,
+          "frr": 0.0026666666666666666,
+          "gar": 0.9973333333333333,
+          "accuracy": 0.9973336111111111
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.2709677517414093,
+          "genuine_accepted": 5970,
+          "genuine_rejected": 30,
+          "impostor_accepted": 3569,
+          "impostor_rejected": 3590431,
+          "far": 0.000993043962159154,
+          "frr": 0.005,
+          "gar": 0.995,
+          "accuracy": 0.9990002777777778
+        },
+        "rank1": 0.9981666666666666,
+        "rank5": 0.999,
+        "false_rejects": 16,
+        "palms_with_false_reject": 5,
+        "probes_per_palm": 10.0,
+        "worst_palms": [
+          [
+            "P014",
+            7
+          ],
+          [
+            "P499",
+            5
+          ],
+          [
+            "P403",
+            2
+          ],
+          [
+            "P069",
+            1
+          ],
+          [
+            "P519",
+            1
+          ]
+        ],
+        "eer_ci95": [
+          0.0011940213571166335,
+          0.004833333333333334
+        ]
+      },
+      "same": {
+        "genuine": 5400,
+        "impostor": 3234600,
+        "eer": 0.0005555555555555556,
+        "threshold": 0.2749766458053978,
+        "dprime": 4.214485375647837,
+        "frr_at_far_0.01": 0.00018518518518518518,
+        "threshold_at_far_0.01": 0.2522222101688385,
+        "frr_at_far_0.001": 0.0005555555555555556,
+        "threshold_at_far_0.001": 0.2709677517414093,
+        "frr_at_far_0.0001": 0.0007407407407407407,
+        "threshold_at_far_0.0001": 0.28555554151535034,
+        "confusion_eer": {
+          "threshold": 0.2749766458053978,
+          "genuine_accepted": 5397,
+          "genuine_rejected": 3,
+          "impostor_accepted": 1793,
+          "impostor_rejected": 3232807,
+          "far": 0.0005543189266060719,
+          "frr": 0.0005555555555555556,
+          "gar": 0.9994444444444445,
+          "accuracy": 0.9994456790123457
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.2709677517414093,
+          "genuine_accepted": 5397,
+          "genuine_rejected": 3,
+          "impostor_accepted": 3195,
+          "impostor_rejected": 3231405,
+          "far": 0.0009877573734001113,
+          "frr": 0.0005555555555555556,
+          "gar": 0.9994444444444445,
+          "accuracy": 0.9990129629629629
+        },
+        "rank1": 0.9998148148148148,
+        "rank5": 1.0,
+        "false_rejects": 3,
+        "palms_with_false_reject": 1,
+        "probes_per_palm": 9.0,
+        "worst_palms": [
+          [
+            "P439",
+            3
+          ]
+        ]
+      }
+    },
+    "exp2": {
+      "cross": {
+        "genuine": 6000,
+        "impostor": 3594000,
+        "eer": 0.0011666666666666668,
+        "threshold": 0.27718475461006165,
+        "dprime": 4.600100134056447,
+        "frr_at_far_0.01": 0.0,
+        "threshold_at_far_0.01": 0.2611111104488373,
+        "frr_at_far_0.001": 0.0011666666666666668,
+        "threshold_at_far_0.001": 0.2782258093357086,
+        "frr_at_far_0.0001": 0.0031666666666666666,
+        "threshold_at_far_0.0001": 0.2933333218097687,
+        "confusion_eer": {
+          "threshold": 0.27718475461006165,
+          "genuine_accepted": 5993,
+          "genuine_rejected": 7,
+          "impostor_accepted": 4166,
+          "impostor_rejected": 3589834,
+          "far": 0.001159154145798553,
+          "frr": 0.0011666666666666668,
+          "gar": 0.9988333333333334,
+          "accuracy": 0.9988408333333333
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.2782258093357086,
+          "genuine_accepted": 5993,
+          "genuine_rejected": 7,
+          "impostor_accepted": 3561,
+          "impostor_rejected": 3590439,
+          "far": 0.0009908180300500834,
+          "frr": 0.0011666666666666668,
+          "gar": 0.9988333333333334,
+          "accuracy": 0.9990088888888888
+        },
+        "rank1": 0.9993333333333333,
+        "rank5": 1.0,
+        "false_rejects": 7,
+        "palms_with_false_reject": 5,
+        "probes_per_palm": 10.0,
+        "worst_palms": [
+          [
+            "P025",
+            2
+          ],
+          [
+            "P069",
+            2
+          ],
+          [
+            "P272",
+            1
+          ],
+          [
+            "P489",
+            1
+          ],
+          [
+            "P593",
+            1
+          ]
+        ],
+        "eer_ci95": [
+          0.00048754970794163174,
+          0.0015
+        ]
+      },
+      "same": {
+        "genuine": 5400,
+        "impostor": 3234600,
+        "eer": 0.00037037037037037035,
+        "threshold": 0.2843781682578,
+        "dprime": 4.274781651009338,
+        "frr_at_far_0.01": 0.0,
+        "threshold_at_far_0.01": 0.2611111104488373,
+        "frr_at_far_0.001": 0.00037037037037037035,
+        "threshold_at_far_0.001": 0.27812498807907104,
+        "frr_at_far_0.0001": 0.00037037037037037035,
+        "threshold_at_far_0.0001": 0.2927083373069763,
+        "confusion_eer": {
+          "threshold": 0.2843781682578,
+          "genuine_accepted": 5398,
+          "genuine_rejected": 2,
+          "impostor_accepted": 1177,
+          "impostor_rejected": 3233423,
+          "far": 0.00036387806838558093,
+          "frr": 0.00037037037037037035,
+          "gar": 0.9996296296296296,
+          "accuracy": 0.9996361111111111
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.27812498807907104,
+          "genuine_accepted": 5398,
+          "genuine_rejected": 2,
+          "impostor_accepted": 3221,
+          "impostor_rejected": 3231379,
+          "far": 0.0009957954615717555,
+          "frr": 0.00037037037037037035,
+          "gar": 0.9996296296296296,
+          "accuracy": 0.9990052469135803
+        },
+        "rank1": 1.0,
+        "rank5": 1.0,
+        "false_rejects": 2,
+        "palms_with_false_reject": 1,
+        "probes_per_palm": 9.0,
+        "worst_palms": [
+          [
+            "P439",
+            2
+          ]
+        ]
+      }
+    },
+    "rloc": {
+      "cross": {
+        "genuine": 6000,
+        "impostor": 3594000,
+        "eer": 0.0011150793650793651,
+        "threshold": 0.6806129557745797,
+        "dprime": 6.544239445200124,
+        "frr_at_far_0.01": 0.0,
+        "threshold_at_far_0.01": 0.6638917922973633,
+        "frr_at_far_0.001": 0.0011666666666666668,
+        "threshold_at_far_0.001": 0.6815816760063171,
+        "frr_at_far_0.0001": 0.003833333333333333,
+        "threshold_at_far_0.0001": 0.6953125,
+        "confusion_eer": {
+          "threshold": 0.6806129557745797,
+          "genuine_accepted": 5993,
+          "genuine_rejected": 7,
+          "impostor_accepted": 3972,
+          "impostor_rejected": 3590028,
+          "far": 0.0011051752921535894,
+          "frr": 0.0011666666666666668,
+          "gar": 0.9988333333333334,
+          "accuracy": 0.9988947222222222
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.6815816760063171,
+          "genuine_accepted": 5993,
+          "genuine_rejected": 7,
+          "impostor_accepted": 3509,
+          "impostor_rejected": 3590491,
+          "far": 0.0009763494713411241,
+          "frr": 0.0011666666666666668,
+          "gar": 0.9988333333333334,
+          "accuracy": 0.9990233333333334
+        },
+        "rank1": 0.9995,
+        "rank5": 1.0,
+        "false_rejects": 7,
+        "palms_with_false_reject": 5,
+        "probes_per_palm": 10.0,
+        "worst_palms": [
+          [
+            "P014",
+            2
+          ],
+          [
+            "P069",
+            2
+          ],
+          [
+            "P025",
+            1
+          ],
+          [
+            "P272",
+            1
+          ],
+          [
+            "P519",
+            1
+          ]
+        ],
+        "eer_ci95": [
+          0.0003794360443037776,
+          0.0016293310210492423
+        ]
+      },
+      "same": {
+        "genuine": 5400,
+        "impostor": 3234600,
+        "eer": 0.00018518518518518518,
+        "threshold": 0.6923627406358719,
+        "dprime": 7.914214634395214,
+        "frr_at_far_0.01": 0.0,
+        "threshold_at_far_0.01": 0.6635416746139526,
+        "frr_at_far_0.001": 0.0,
+        "threshold_at_far_0.001": 0.6814516186714172,
+        "frr_at_far_0.0001": 0.00018518518518518518,
+        "threshold_at_far_0.0001": 0.6958333253860474,
+        "confusion_eer": {
+          "threshold": 0.6923627406358719,
+          "genuine_accepted": 5399,
+          "genuine_rejected": 1,
+          "impostor_accepted": 598,
+          "impostor_rejected": 3234002,
+          "far": 0.00018487602794781425,
+          "frr": 0.00018518518518518518,
+          "gar": 0.9998148148148148,
+          "accuracy": 0.9998151234567901
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.6814516186714172,
+          "genuine_accepted": 5400,
+          "genuine_rejected": 0,
+          "impostor_accepted": 3173,
+          "impostor_rejected": 3231427,
+          "far": 0.000980955914177951,
+          "frr": 0.0,
+          "gar": 1.0,
+          "accuracy": 0.9990206790123457
+        },
+        "rank1": 1.0,
+        "rank5": 1.0,
+        "false_rejects": 1,
+        "palms_with_false_reject": 1,
+        "probes_per_palm": 9.0,
+        "worst_palms": [
+          [
+            "P439",
+            1
+          ]
+        ]
+      }
+    },
+    "exp4": {
+      "cross": {
+        "genuine": 6000,
+        "impostor": 3594000,
+        "eer": 0.0031666666666666666,
+        "threshold": 0.8305875008456265,
+        "dprime": 5.92972485050452,
+        "frr_at_far_0.01": 0.0015,
+        "threshold_at_far_0.01": 0.8239583373069763,
+        "frr_at_far_0.001": 0.006,
+        "threshold_at_far_0.001": 0.8366666436195374,
+        "frr_at_far_0.0001": 0.02,
+        "threshold_at_far_0.0001": 0.8473118543624878,
+        "confusion_eer": {
+          "threshold": 0.8305875008456265,
+          "genuine_accepted": 5981,
+          "genuine_rejected": 19,
+          "impostor_accepted": 11301,
+          "impostor_rejected": 3582699,
+          "far": 0.00314440734557596,
+          "frr": 0.0031666666666666666,
+          "gar": 0.9968333333333333,
+          "accuracy": 0.9968555555555556
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.8366666436195374,
+          "genuine_accepted": 5964,
+          "genuine_rejected": 36,
+          "impostor_accepted": 3534,
+          "impostor_rejected": 3590466,
+          "far": 0.0009833055091819699,
+          "frr": 0.006,
+          "gar": 0.994,
+          "accuracy": 0.9990083333333334
+        },
+        "rank1": 0.9955,
+        "rank5": 0.9993333333333333,
+        "false_rejects": 19,
+        "palms_with_false_reject": 9,
+        "probes_per_palm": 10.0,
+        "worst_palms": [
+          [
+            "P014",
+            7
+          ],
+          [
+            "P272",
+            3
+          ],
+          [
+            "P069",
+            2
+          ],
+          [
+            "P200",
+            2
+          ],
+          [
+            "P007",
+            1
+          ]
+        ],
+        "eer_ci95": [
+          0.0014983723196881108,
+          0.00528583552617572
+        ]
+      },
+      "same": {
+        "genuine": 5400,
+        "impostor": 3234600,
+        "eer": 0.0007407407407407407,
+        "threshold": 0.8377353013778219,
+        "dprime": 7.470768981405058,
+        "frr_at_far_0.01": 0.0,
+        "threshold_at_far_0.01": 0.823655903339386,
+        "frr_at_far_0.001": 0.0007407407407407407,
+        "threshold_at_far_0.001": 0.8366284966468811,
+        "frr_at_far_0.0001": 0.0016666666666666668,
+        "threshold_at_far_0.0001": 0.846875011920929,
+        "confusion_eer": {
+          "threshold": 0.8377353013778219,
+          "genuine_accepted": 5396,
+          "genuine_rejected": 4,
+          "impostor_accepted": 2314,
+          "impostor_rejected": 3232286,
+          "far": 0.0007153898472763247,
+          "frr": 0.0007407407407407407,
+          "gar": 0.9992592592592593,
+          "accuracy": 0.9992845679012345
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.8366284966468811,
+          "genuine_accepted": 5396,
+          "genuine_rejected": 4,
+          "impostor_accepted": 3173,
+          "impostor_rejected": 3231427,
+          "far": 0.000980955914177951,
+          "frr": 0.0007407407407407407,
+          "gar": 0.9992592592592593,
+          "accuracy": 0.9990194444444445
+        },
+        "rank1": 0.9994444444444445,
+        "rank5": 0.9998148148148148,
+        "false_rejects": 4,
+        "palms_with_false_reject": 3,
+        "probes_per_palm": 9.0,
+        "worst_palms": [
+          [
+            "P439",
+            2
+          ],
+          [
+            "P227",
+            1
+          ],
+          [
+            "P304",
+            1
+          ]
+        ]
+      }
+    },
+    "align1": {
+      "cross": {
+        "genuine": 6000,
+        "impostor": 3594000,
+        "eer": 0.0025013919413919413,
+        "threshold": 0.6668845933348267,
+        "dprime": 6.379995426764058,
+        "frr_at_far_0.01": 0.001,
+        "threshold_at_far_0.01": 0.6544444561004639,
+        "frr_at_far_0.001": 0.0036666666666666666,
+        "threshold_at_far_0.001": 0.6742976307868958,
+        "frr_at_far_0.0001": 0.0085,
+        "threshold_at_far_0.0001": 0.6895833611488342,
+        "confusion_eer": {
+          "threshold": 0.6668845933348267,
+          "genuine_accepted": 5984,
+          "genuine_rejected": 16,
+          "impostor_accepted": 8832,
+          "impostor_rejected": 3585168,
+          "far": 0.0024574290484140233,
+          "frr": 0.0026666666666666666,
+          "gar": 0.9973333333333333,
+          "accuracy": 0.9975422222222222
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.6742976307868958,
+          "genuine_accepted": 5978,
+          "genuine_rejected": 22,
+          "impostor_accepted": 3539,
+          "impostor_rejected": 3590461,
+          "far": 0.000984696716750139,
+          "frr": 0.0036666666666666666,
+          "gar": 0.9963333333333333,
+          "accuracy": 0.9990108333333333
+        },
+        "rank1": 0.998,
+        "rank5": 1.0,
+        "false_rejects": 16,
+        "palms_with_false_reject": 7,
+        "probes_per_palm": 10.0,
+        "worst_palms": [
+          [
+            "P014",
+            8
+          ],
+          [
+            "P403",
+            2
+          ],
+          [
+            "P499",
+            2
+          ],
+          [
+            "P069",
+            1
+          ],
+          [
+            "P271",
+            1
+          ]
+        ],
+        "eer_ci95": [
+          0.00107136430865448,
+          0.0036062241963283736
+        ]
+      },
+      "same": {
+        "genuine": 5400,
+        "impostor": 3234600,
+        "eer": 0.00030932030932030936,
+        "threshold": 0.6820568147596422,
+        "dprime": 7.815317409185367,
+        "frr_at_far_0.01": 0.0,
+        "threshold_at_far_0.01": 0.654296875,
+        "frr_at_far_0.001": 0.0,
+        "threshold_at_far_0.001": 0.6741935610771179,
+        "frr_at_far_0.0001": 0.0005555555555555556,
+        "threshold_at_far_0.0001": 0.6899063587188721,
+        "confusion_eer": {
+          "threshold": 0.6820568147596422,
+          "genuine_accepted": 5398,
+          "genuine_rejected": 2,
+          "impostor_accepted": 988,
+          "impostor_rejected": 3233612,
+          "far": 0.0003054473505224757,
+          "frr": 0.00037037037037037035,
+          "gar": 0.9996296296296296,
+          "accuracy": 0.9996944444444444
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.6741935610771179,
+          "genuine_accepted": 5400,
+          "genuine_rejected": 0,
+          "impostor_accepted": 3184,
+          "impostor_rejected": 3231416,
+          "far": 0.000984356643789031,
+          "frr": 0.0,
+          "gar": 1.0,
+          "accuracy": 0.9990172839506173
+        },
+        "rank1": 1.0,
+        "rank5": 1.0,
+        "false_rejects": 2,
+        "palms_with_false_reject": 1,
+        "probes_per_palm": 9.0,
+        "worst_palms": [
+          [
+            "P439",
+            2
+          ]
+        ]
+      }
+    },
+    "gab1": {
+      "cross": {
+        "genuine": 6000,
+        "impostor": 3594000,
+        "eer": 0.0016666666666666668,
+        "threshold": 0.2831963362153043,
+        "dprime": 4.918736666347781,
+        "frr_at_far_0.01": 0.00016666666666666666,
+        "threshold_at_far_0.01": 0.2671371102333069,
+        "frr_at_far_0.001": 0.0023333333333333335,
+        "threshold_at_far_0.001": 0.28729838132858276,
+        "frr_at_far_0.0001": 0.006666666666666667,
+        "threshold_at_far_0.0001": 0.3053763508796692,
+        "confusion_eer": {
+          "threshold": 0.2831963362153043,
+          "genuine_accepted": 5990,
+          "genuine_rejected": 10,
+          "impostor_accepted": 5986,
+          "impostor_rejected": 3588014,
+          "far": 0.0016655537006121314,
+          "frr": 0.0016666666666666668,
+          "gar": 0.9983333333333333,
+          "accuracy": 0.9983344444444444
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.28729838132858276,
+          "genuine_accepted": 5986,
+          "genuine_rejected": 14,
+          "impostor_accepted": 3531,
+          "impostor_rejected": 3590469,
+          "far": 0.0009824707846410685,
+          "frr": 0.0023333333333333335,
+          "gar": 0.9976666666666667,
+          "accuracy": 0.9990152777777778
+        },
+        "rank1": 0.9986666666666667,
+        "rank5": 1.0,
+        "false_rejects": 10,
+        "palms_with_false_reject": 6,
+        "probes_per_palm": 10.0,
+        "worst_palms": [
+          [
+            "P014",
+            2
+          ],
+          [
+            "P403",
+            2
+          ],
+          [
+            "P453",
+            2
+          ],
+          [
+            "P519",
+            2
+          ],
+          [
+            "P069",
+            1
+          ]
+        ],
+        "eer_ci95": [
+          0.0006663475177304973,
+          0.0023267051188882244
+        ]
+      },
+      "same": {
+        "genuine": 5400,
+        "impostor": 3234600,
+        "eer": 0.00037037037037037035,
+        "threshold": 0.29553067581406955,
+        "dprime": 4.932180720377972,
+        "frr_at_far_0.01": 0.0,
+        "threshold_at_far_0.01": 0.2671371102333069,
+        "frr_at_far_0.001": 0.00018518518518518518,
+        "threshold_at_far_0.001": 0.28777778148651123,
+        "frr_at_far_0.0001": 0.00037037037037037035,
+        "threshold_at_far_0.0001": 0.3048907518386841,
+        "confusion_eer": {
+          "threshold": 0.29553067581406955,
+          "genuine_accepted": 5398,
+          "genuine_rejected": 2,
+          "impostor_accepted": 1174,
+          "impostor_rejected": 3233426,
+          "far": 0.00036295059667346813,
+          "frr": 0.00037037037037037035,
+          "gar": 0.9996296296296296,
+          "accuracy": 0.999637037037037
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.28777778148651123,
+          "genuine_accepted": 5399,
+          "genuine_rejected": 1,
+          "impostor_accepted": 3205,
+          "impostor_rejected": 3231395,
+          "far": 0.0009908489457738205,
+          "frr": 0.00018518518518518518,
+          "gar": 0.9998148148148148,
+          "accuracy": 0.9990104938271605
+        },
+        "rank1": 1.0,
+        "rank5": 1.0,
+        "false_rejects": 2,
+        "palms_with_false_reject": 1,
+        "probes_per_palm": 9.0,
+        "worst_palms": [
+          [
+            "P439",
+            2
+          ]
+        ]
+      }
+    },
+    "gab2": {
+      "cross": {
+        "genuine": 6000,
+        "impostor": 3594000,
+        "eer": 0.0005,
+        "threshold": 0.27693916857242584,
+        "dprime": 4.602406666507299,
+        "frr_at_far_0.01": 0.0,
+        "threshold_at_far_0.01": 0.25705644488334656,
+        "frr_at_far_0.001": 0.0005,
+        "threshold_at_far_0.001": 0.27291667461395264,
+        "frr_at_far_0.0001": 0.0011666666666666668,
+        "threshold_at_far_0.0001": 0.2864583432674408,
+        "confusion_eer": {
+          "threshold": 0.27693916857242584,
+          "genuine_accepted": 5997,
+          "genuine_rejected": 3,
+          "impostor_accepted": 1797,
+          "impostor_rejected": 3592203,
+          "far": 0.0005,
+          "frr": 0.0005,
+          "gar": 0.9995,
+          "accuracy": 0.9995
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.27291667461395264,
+          "genuine_accepted": 5997,
+          "genuine_rejected": 3,
+          "impostor_accepted": 3500,
+          "impostor_rejected": 3590500,
+          "far": 0.0009738452977184196,
+          "frr": 0.0005,
+          "gar": 0.9995,
+          "accuracy": 0.9990269444444444
+        },
+        "rank1": 0.9996666666666667,
+        "rank5": 1.0,
+        "false_rejects": 3,
+        "palms_with_false_reject": 3,
+        "probes_per_palm": 10.0,
+        "worst_palms": [
+          [
+            "P069",
+            1
+          ],
+          [
+            "P272",
+            1
+          ],
+          [
+            "P453",
+            1
+          ]
+        ],
+        "eer_ci95": [
+          0.0001880178059450396,
+          0.0011666666666666665
+        ]
+      },
+      "same": {
+        "genuine": 5400,
+        "impostor": 3234600,
+        "eer": 0.00018518518518518518,
+        "threshold": 0.2818087217482654,
+        "dprime": 4.327456692096466,
+        "frr_at_far_0.01": 0.0,
+        "threshold_at_far_0.01": 0.25705644488334656,
+        "frr_at_far_0.001": 0.00018518518518518518,
+        "threshold_at_far_0.001": 0.27217742800712585,
+        "frr_at_far_0.0001": 0.00018518518518518518,
+        "threshold_at_far_0.0001": 0.2854166626930237,
+        "confusion_eer": {
+          "threshold": 0.2818087217482654,
+          "genuine_accepted": 5399,
+          "genuine_rejected": 1,
+          "impostor_accepted": 584,
+          "impostor_rejected": 3234016,
+          "far": 0.00018054782662462127,
+          "frr": 0.00018518518518518518,
+          "gar": 0.9998148148148148,
+          "accuracy": 0.9998194444444445
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.27217742800712585,
+          "genuine_accepted": 5399,
+          "genuine_rejected": 1,
+          "impostor_accepted": 3206,
+          "impostor_rejected": 3231394,
+          "far": 0.0009911581030111914,
+          "frr": 0.00018518518518518518,
+          "gar": 0.9998148148148148,
+          "accuracy": 0.9990101851851851
+        },
+        "rank1": 1.0,
+        "rank5": 1.0,
+        "false_rejects": 1,
+        "palms_with_false_reject": 1,
+        "probes_per_palm": 9.0,
+        "worst_palms": [
+          [
+            "P439",
+            1
+          ]
+        ]
+      }
+    },
+    "gab3": {
+      "cross": {
+        "genuine": 6000,
+        "impostor": 3594000,
+        "eer": 0.0005625297194484071,
+        "threshold": 0.6744136376659813,
+        "dprime": 6.538939676923979,
+        "frr_at_far_0.01": 0.0,
+        "threshold_at_far_0.01": 0.65625,
+        "frr_at_far_0.001": 0.00016666666666666666,
+        "threshold_at_far_0.001": 0.6711111068725586,
+        "frr_at_far_0.0001": 0.0011666666666666668,
+        "threshold_at_far_0.0001": 0.684374988079071,
+        "confusion_eer": {
+          "threshold": 0.6744136376659813,
+          "genuine_accepted": 5996,
+          "genuine_rejected": 4,
+          "impostor_accepted": 1958,
+          "impostor_rejected": 3592042,
+          "far": 0.0005447968836950473,
+          "frr": 0.0006666666666666666,
+          "gar": 0.9993333333333333,
+          "accuracy": 0.999455
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.6711111068725586,
+          "genuine_accepted": 5999,
+          "genuine_rejected": 1,
+          "impostor_accepted": 3531,
+          "impostor_rejected": 3590469,
+          "far": 0.0009824707846410685,
+          "frr": 0.00016666666666666666,
+          "gar": 0.9998333333333334,
+          "accuracy": 0.9990188888888889
+        },
+        "rank1": 0.9996666666666667,
+        "rank5": 1.0,
+        "false_rejects": 4,
+        "palms_with_false_reject": 4,
+        "probes_per_palm": 10.0,
+        "worst_palms": [
+          [
+            "P025",
+            1
+          ],
+          [
+            "P069",
+            1
+          ],
+          [
+            "P272",
+            1
+          ],
+          [
+            "P519",
+            1
+          ]
+        ],
+        "eer_ci95": [
+          0.00016555096418732873,
+          0.0008464303779440864
+        ]
+      },
+      "same": {
+        "genuine": 5400,
+        "impostor": 3234600,
+        "eer": 2.6807173229802176e-05,
+        "threshold": 0.6917131087942647,
+        "dprime": 7.883483250956789,
+        "frr_at_far_0.01": 0.0,
+        "threshold_at_far_0.01": 0.6559139490127563,
+        "frr_at_far_0.001": 0.0,
+        "threshold_at_far_0.001": 0.6709677577018738,
+        "frr_at_far_0.0001": 0.0,
+        "threshold_at_far_0.0001": 0.6844444274902344,
+        "confusion_eer": {
+          "threshold": 0.6917131087942647,
+          "genuine_accepted": 5399,
+          "genuine_rejected": 1,
+          "impostor_accepted": 85,
+          "impostor_rejected": 3234515,
+          "far": 2.627836517652878e-05,
+          "frr": 0.00018518518518518518,
+          "gar": 0.9998148148148148,
+          "accuracy": 0.9999734567901235
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.6709677577018738,
+          "genuine_accepted": 5400,
+          "genuine_rejected": 0,
+          "impostor_accepted": 3193,
+          "impostor_rejected": 3231407,
+          "far": 0.0009871390589253695,
+          "frr": 0.0,
+          "gar": 1.0,
+          "accuracy": 0.9990145061728395
+        },
+        "rank1": 1.0,
+        "rank5": 1.0,
+        "false_rejects": 1,
+        "palms_with_false_reject": 1,
+        "probes_per_palm": 9.0,
+        "worst_palms": [
+          [
+            "P227",
+            1
+          ]
+        ]
+      }
+    },
+    "oneway": {
+      "cross": {
+        "genuine": 6000,
+        "impostor": 3594000,
+        "eer": 0.0015994910941475827,
+        "threshold": 0.6746594873093467,
+        "dprime": 6.330666503534293,
+        "frr_at_far_0.01": 0.0,
+        "threshold_at_far_0.01": 0.6597294211387634,
+        "frr_at_far_0.001": 0.002,
+        "threshold_at_far_0.001": 0.6784273982048035,
+        "frr_at_far_0.0001": 0.006666666666666667,
+        "threshold_at_far_0.0001": 0.6927083134651184,
+        "confusion_eer": {
+          "threshold": 0.6746594873093467,
+          "genuine_accepted": 5990,
+          "genuine_rejected": 10,
+          "impostor_accepted": 5726,
+          "impostor_rejected": 3588274,
+          "far": 0.0015932109070673345,
+          "frr": 0.0016666666666666668,
+          "gar": 0.9983333333333333,
+          "accuracy": 0.9984066666666667
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.6784273982048035,
+          "genuine_accepted": 5988,
+          "genuine_rejected": 12,
+          "impostor_accepted": 3576,
+          "impostor_rejected": 3590424,
+          "far": 0.000994991652754591,
+          "frr": 0.002,
+          "gar": 0.998,
+          "accuracy": 0.9990033333333334
+        },
+        "rank1": 0.9995,
+        "rank5": 1.0,
+        "false_rejects": 10,
+        "palms_with_false_reject": 6,
+        "probes_per_palm": 10.0,
+        "worst_palms": [
+          [
+            "P014",
+            3
+          ],
+          [
+            "P025",
+            2
+          ],
+          [
+            "P069",
+            2
+          ],
+          [
+            "P149",
+            1
+          ],
+          [
+            "P272",
+            1
+          ]
+        ],
+        "eer_ci95": [
+          0.0005651247798947364,
+          0.0024402725948185445
+        ]
+      },
+      "same": {
+        "genuine": 5400,
+        "impostor": 3234600,
+        "eer": 0.0002427070493631508,
+        "threshold": 0.6872220236790351,
+        "dprime": 7.679417367148887,
+        "frr_at_far_0.01": 0.0,
+        "threshold_at_far_0.01": 0.659375011920929,
+        "frr_at_far_0.001": 0.0,
+        "threshold_at_far_0.001": 0.677734375,
+        "frr_at_far_0.0001": 0.00037037037037037035,
+        "threshold_at_far_0.0001": 0.6930280923843384,
+        "confusion_eer": {
+          "threshold": 0.6872220236790351,
+          "genuine_accepted": 5398,
+          "genuine_rejected": 2,
+          "impostor_accepted": 763,
+          "impostor_rejected": 3233837,
+          "far": 0.0002358869721140172,
+          "frr": 0.00037037037037037035,
+          "gar": 0.9996296296296296,
+          "accuracy": 0.9997638888888889
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.677734375,
+          "genuine_accepted": 5400,
+          "genuine_rejected": 0,
+          "impostor_accepted": 3209,
+          "impostor_rejected": 3231391,
+          "far": 0.0009920855747233043,
+          "frr": 0.0,
+          "gar": 1.0,
+          "accuracy": 0.9990095679012345
+        },
+        "rank1": 1.0,
+        "rank5": 1.0,
+        "false_rejects": 2,
+        "palms_with_false_reject": 2,
+        "probes_per_palm": 9.0,
+        "worst_palms": [
+          [
+            "P288",
+            1
+          ],
+          [
+            "P439",
+            1
+          ]
+        ]
+      }
+    },
+    "shift1": {
+      "cross": {
+        "genuine": 6000,
+        "impostor": 3594000,
+        "eer": 0.006333333333333333,
+        "threshold": 0.6632655970837487,
+        "dprime": 6.104514878708297,
+        "frr_at_far_0.01": 0.005666666666666667,
+        "threshold_at_far_0.01": 0.6592742204666138,
+        "frr_at_far_0.001": 0.009333333333333334,
+        "threshold_at_far_0.001": 0.677734375,
+        "frr_at_far_0.0001": 0.0135,
+        "threshold_at_far_0.0001": 0.6923828125,
+        "confusion_eer": {
+          "threshold": 0.6632655970837487,
+          "genuine_accepted": 5962,
+          "genuine_rejected": 38,
+          "impostor_accepted": 22681,
+          "impostor_rejected": 3571319,
+          "far": 0.006310795770728993,
+          "frr": 0.006333333333333333,
+          "gar": 0.9936666666666667,
+          "accuracy": 0.9936891666666666
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.677734375,
+          "genuine_accepted": 5944,
+          "genuine_rejected": 56,
+          "impostor_accepted": 3553,
+          "impostor_rejected": 3590447,
+          "far": 0.0009885920979410129,
+          "frr": 0.009333333333333334,
+          "gar": 0.9906666666666667,
+          "accuracy": 0.9989975
+        },
+        "rank1": 0.9925,
+        "rank5": 0.995,
+        "false_rejects": 38,
+        "palms_with_false_reject": 9,
+        "probes_per_palm": 10.0,
+        "worst_palms": [
+          [
+            "P014",
+            9
+          ],
+          [
+            "P025",
+            6
+          ],
+          [
+            "P136",
+            6
+          ],
+          [
+            "P403",
+            5
+          ],
+          [
+            "P499",
+            4
+          ]
+        ],
+        "eer_ci95": [
+          0.0025000000000000005,
+          0.010170437177227893
+        ]
+      },
+      "same": {
+        "genuine": 5400,
+        "impostor": 3234600,
+        "eer": 0.002037037037037037,
+        "threshold": 0.6722911241892222,
+        "dprime": 7.717150504246367,
+        "frr_at_far_0.01": 0.0014814814814814814,
+        "threshold_at_far_0.01": 0.6591796875,
+        "frr_at_far_0.001": 0.0022222222222222222,
+        "threshold_at_far_0.001": 0.677734375,
+        "frr_at_far_0.0001": 0.0025925925925925925,
+        "threshold_at_far_0.0001": 0.6930280923843384,
+        "confusion_eer": {
+          "threshold": 0.6722911241892222,
+          "genuine_accepted": 5389,
+          "genuine_rejected": 11,
+          "impostor_accepted": 6429,
+          "impostor_rejected": 3228171,
+          "far": 0.0019875718790576887,
+          "frr": 0.002037037037037037,
+          "gar": 0.9979629629629629,
+          "accuracy": 0.9980123456790123
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.677734375,
+          "genuine_accepted": 5388,
+          "genuine_rejected": 12,
+          "impostor_accepted": 3012,
+          "impostor_rejected": 3231588,
+          "far": 0.0009311815989612316,
+          "frr": 0.0022222222222222222,
+          "gar": 0.9977777777777778,
+          "accuracy": 0.9990666666666667
+        },
+        "rank1": 0.9981481481481481,
+        "rank5": 0.9988888888888889,
+        "false_rejects": 11,
+        "palms_with_false_reject": 6,
+        "probes_per_palm": 9.0,
+        "worst_palms": [
+          [
+            "P439",
+            5
+          ],
+          [
+            "P402",
+            2
+          ],
+          [
+            "P227",
+            1
+          ],
+          [
+            "P288",
+            1
+          ],
+          [
+            "P554",
+            1
+          ]
+        ]
+      }
+    },
+    "first": {
+      "cross": {
+        "genuine": 6000,
+        "impostor": 3594000,
+        "eer": 0.006896183473389356,
+        "threshold": 0.658425533721427,
+        "dprime": 5.945671172179768,
+        "frr_at_far_0.01": 0.006,
+        "threshold_at_far_0.01": 0.6552419066429138,
+        "frr_at_far_0.001": 0.010333333333333333,
+        "threshold_at_far_0.001": 0.6748046875,
+        "frr_at_far_0.0001": 0.016666666666666666,
+        "threshold_at_far_0.0001": 0.6899063587188721,
+        "confusion_eer": {
+          "threshold": 0.658425533721427,
+          "genuine_accepted": 5958,
+          "genuine_rejected": 42,
+          "impostor_accepted": 23972,
+          "impostor_rejected": 3570028,
+          "far": 0.0066700055648302725,
+          "frr": 0.007,
+          "gar": 0.993,
+          "accuracy": 0.9933294444444445
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.6748046875,
+          "genuine_accepted": 5938,
+          "genuine_rejected": 62,
+          "impostor_accepted": 3467,
+          "impostor_rejected": 3590533,
+          "far": 0.000964663327768503,
+          "frr": 0.010333333333333333,
+          "gar": 0.9896666666666667,
+          "accuracy": 0.9990197222222222
+        },
+        "rank1": 0.992,
+        "rank5": 0.9936666666666667,
+        "false_rejects": 42,
+        "palms_with_false_reject": 9,
+        "probes_per_palm": 10.0,
+        "worst_palms": [
+          [
+            "P014",
+            10
+          ],
+          [
+            "P025",
+            8
+          ],
+          [
+            "P136",
+            6
+          ],
+          [
+            "P403",
+            5
+          ],
+          [
+            "P499",
+            4
+          ]
+        ],
+        "eer_ci95": [
+          0.0026693704936217168,
+          0.011004166666666662
+        ]
+      },
+      "same": {
+        "genuine": 5400,
+        "impostor": 3234600,
+        "eer": 0.0022222222222222222,
+        "threshold": 0.6679411865770817,
+        "dprime": 7.5279832775001445,
+        "frr_at_far_0.01": 0.0014814814814814814,
+        "threshold_at_far_0.01": 0.6552419066429138,
+        "frr_at_far_0.001": 0.0024074074074074076,
+        "threshold_at_far_0.001": 0.6742976307868958,
+        "frr_at_far_0.0001": 0.0025925925925925925,
+        "threshold_at_far_0.0001": 0.6895161271095276,
+        "confusion_eer": {
+          "threshold": 0.6679411865770817,
+          "genuine_accepted": 5388,
+          "genuine_rejected": 12,
+          "impostor_accepted": 7167,
+          "impostor_rejected": 3227433,
+          "far": 0.0022157299202374327,
+          "frr": 0.0022222222222222222,
+          "gar": 0.9977777777777778,
+          "accuracy": 0.9977842592592593
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.6742976307868958,
+          "genuine_accepted": 5387,
+          "genuine_rejected": 13,
+          "impostor_accepted": 3173,
+          "impostor_rejected": 3231427,
+          "far": 0.000980955914177951,
+          "frr": 0.0024074074074074076,
+          "gar": 0.9975925925925926,
+          "accuracy": 0.9990166666666667
+        },
+        "rank1": 0.9981481481481481,
+        "rank5": 0.9987037037037036,
+        "false_rejects": 12,
+        "palms_with_false_reject": 6,
+        "probes_per_palm": 9.0,
+        "worst_palms": [
+          [
+            "P439",
+            6
+          ],
+          [
+            "P402",
+            2
+          ],
+          [
+            "P227",
+            1
+          ],
+          [
+            "P288",
+            1
+          ],
+          [
+            "P554",
+            1
+          ]
+        ]
+      }
+    },
+    "han": {
+      "cross": {
+        "genuine": 6000,
+        "impostor": 3594000,
+        "eer": 0.07668305555555556,
+        "threshold": 0.51650691618522,
+        "dprime": 2.9111146950464657,
+        "frr_at_far_0.01": 0.24333333333333335,
+        "threshold_at_far_0.01": 0.6480125188827515,
+        "frr_at_far_0.001": 0.4415,
+        "threshold_at_far_0.001": 0.7352717518806458,
+        "frr_at_far_0.0001": 0.614,
+        "threshold_at_far_0.0001": 0.7926445007324219,
+        "confusion_eer": {
+          "threshold": 0.51650691618522,
+          "genuine_accepted": 5539,
+          "genuine_rejected": 461,
+          "impostor_accepted": 275598,
+          "impostor_rejected": 3318402,
+          "far": 0.07668280467445743,
+          "frr": 0.07683333333333334,
+          "gar": 0.9231666666666667,
+          "accuracy": 0.9233169444444445
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.7352717518806458,
+          "genuine_accepted": 3351,
+          "genuine_rejected": 2649,
+          "impostor_accepted": 3594,
+          "impostor_rejected": 3590406,
+          "far": 0.001,
+          "frr": 0.4415,
+          "gar": 0.5585,
+          "accuracy": 0.9982658333333333
+        },
+        "rank1": 0.6885,
+        "rank5": 0.8073333333333333,
+        "false_rejects": 461,
+        "palms_with_false_reject": 127,
+        "probes_per_palm": 10.0,
+        "worst_palms": [
+          [
+            "P017",
+            10
+          ],
+          [
+            "P034",
+            10
+          ],
+          [
+            "P041",
+            10
+          ],
+          [
+            "P136",
+            10
+          ],
+          [
+            "P349",
+            10
+          ]
+        ],
+        "eer_ci95": [
+          0.06835643604008608,
+          0.08660868311462643
+        ]
+      },
+      "same": {
+        "genuine": 5400,
+        "impostor": 3234600,
+        "eer": 0.034074074074074076,
+        "threshold": 0.5749409198760986,
+        "dprime": 3.854022260079367,
+        "frr_at_far_0.01": 0.06462962962962963,
+        "threshold_at_far_0.01": 0.6450055241584778,
+        "frr_at_far_0.001": 0.14722222222222223,
+        "threshold_at_far_0.001": 0.7326222062110901,
+        "frr_at_far_0.0001": 0.2633333333333333,
+        "threshold_at_far_0.0001": 0.7947641611099243,
+        "confusion_eer": {
+          "threshold": 0.5749409198760986,
+          "genuine_accepted": 5216,
+          "genuine_rejected": 184,
+          "impostor_accepted": 110216,
+          "impostor_rejected": 3124384,
+          "far": 0.034074074074074076,
+          "frr": 0.034074074074074076,
+          "gar": 0.965925925925926,
+          "accuracy": 0.965925925925926
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.7326222062110901,
+          "genuine_accepted": 4605,
+          "genuine_rejected": 795,
+          "impostor_accepted": 3234,
+          "impostor_rejected": 3231366,
+          "far": 0.0009998145056575774,
+          "frr": 0.14722222222222223,
+          "gar": 0.8527777777777777,
+          "accuracy": 0.9987564814814814
+        },
+        "rank1": 0.9157407407407407,
+        "rank5": 0.9581481481481482,
+        "false_rejects": 184,
+        "palms_with_false_reject": 81,
+        "probes_per_palm": 9.0,
+        "worst_palms": [
+          [
+            "P439",
+            8
+          ],
+          [
+            "P545",
+            8
+          ],
+          [
+            "P579",
+            8
+          ],
+          [
+            "P427",
+            7
+          ],
+          [
+            "P529",
+            7
+          ]
+        ]
+      }
+    },
+    "han_morph": {
+      "cross": {
+        "genuine": 6000,
+        "impostor": 3594000,
+        "eer": 0.11382138888888889,
+        "threshold": 0.34045197705427804,
+        "dprime": 2.4599851952795073,
+        "frr_at_far_0.01": 0.3993333333333333,
+        "threshold_at_far_0.01": 0.50162672996521,
+        "frr_at_far_0.001": 0.6611666666666667,
+        "threshold_at_far_0.001": 0.6005780696868896,
+        "frr_at_far_0.0001": 0.8273333333333334,
+        "threshold_at_far_0.0001": 0.6740286350250244,
+        "confusion_eer": {
+          "threshold": 0.34045197705427804,
+          "genuine_accepted": 5317,
+          "genuine_rejected": 683,
+          "impostor_accepted": 409074,
+          "impostor_rejected": 3184926,
+          "far": 0.11382136894824708,
+          "frr": 0.11383333333333333,
+          "gar": 0.8861666666666667,
+          "accuracy": 0.8861786111111111
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.6005780696868896,
+          "genuine_accepted": 2033,
+          "genuine_rejected": 3967,
+          "impostor_accepted": 3594,
+          "impostor_rejected": 3590406,
+          "far": 0.001,
+          "frr": 0.6611666666666667,
+          "gar": 0.3388333333333333,
+          "accuracy": 0.9978997222222222
+        },
+        "rank1": 0.4666666666666667,
+        "rank5": 0.6556666666666666,
+        "false_rejects": 683,
+        "palms_with_false_reject": 192,
+        "probes_per_palm": 10.0,
+        "worst_palms": [
+          [
+            "P025",
+            10
+          ],
+          [
+            "P057",
+            10
+          ],
+          [
+            "P139",
+            10
+          ],
+          [
+            "P249",
+            10
+          ],
+          [
+            "P326",
+            10
+          ]
+        ],
+        "eer_ci95": [
+          0.10463285216741144,
+          0.12381433486238531
+        ]
+      },
+      "same": {
+        "genuine": 5400,
+        "impostor": 3234600,
+        "eer": 0.05388888888888889,
+        "threshold": 0.39534321427345276,
+        "dprime": 3.3524780658216162,
+        "frr_at_far_0.01": 0.14851851851851852,
+        "threshold_at_far_0.01": 0.49498051404953003,
+        "frr_at_far_0.001": 0.3164814814814815,
+        "threshold_at_far_0.001": 0.591096818447113,
+        "frr_at_far_0.0001": 0.4812962962962963,
+        "threshold_at_far_0.0001": 0.6626442670822144,
+        "confusion_eer": {
+          "threshold": 0.39534321427345276,
+          "genuine_accepted": 5109,
+          "genuine_rejected": 291,
+          "impostor_accepted": 174309,
+          "impostor_rejected": 3060291,
+          "far": 0.05388888888888889,
+          "frr": 0.05388888888888889,
+          "gar": 0.9461111111111111,
+          "accuracy": 0.9461111111111111
+        },
+        "confusion_far_0.001": {
+          "threshold": 0.591096818447113,
+          "genuine_accepted": 3691,
+          "genuine_rejected": 1709,
+          "impostor_accepted": 3234,
+          "impostor_rejected": 3231366,
+          "far": 0.0009998145056575774,
+          "frr": 0.3164814814814815,
+          "gar": 0.6835185185185185,
+          "accuracy": 0.9984743827160494
+        },
+        "rank1": 0.7777777777777778,
+        "rank5": 0.8855555555555555,
+        "false_rejects": 291,
+        "palms_with_false_reject": 134,
+        "probes_per_palm": 9.0,
+        "worst_palms": [
+          [
+            "P529",
+            9
+          ],
+          [
+            "P439",
+            8
+          ],
+          [
+            "P427",
+            7
+          ],
+          [
+            "P379",
+            6
+          ],
+          [
+            "P457",
+            6
+          ]
+        ]
+      }
+    }
+  },
+  "pairs": [
+    {
+      "a": "rloc",
+      "b": "han",
+      "meaning": "RLOC against the 2003 baseline",
+      "diff": -0.0755679761904762,
+      "ci95": [
+        -0.08535010278700263,
+        -0.06735411547104433
+      ],
+      "share_a_better": 1.0
+    },
+    {
+      "a": "exp2",
+      "b": "exp1",
+      "meaning": "adding the enlarged training set (7 templates)",
+      "diff": -0.0014999999999999998,
+      "ci95": [
+        -0.004,
+        -0.0001166438537072728
+      ],
+      "share_a_better": 0.983
+    },
+    {
+      "a": "rloc",
+      "b": "exp2",
+      "meaning": "adding the cross neighbourhood",
+      "diff": -5.158730158730165e-05,
+      "ci95": [
+        -0.0005549671834164892,
+        0.0005776312742678248
+      ],
+      "share_a_better": 0.496
+    },
+    {
+      "a": "exp4",
+      "b": "rloc",
+      "meaning": "3x3 square instead of the cross",
+      "diff": 0.0020515873015873017,
+      "ci95": [
+        0.0008333333333333335,
+        0.0038333333333333327
+      ],
+      "share_a_better": 0.0
+    },
+    {
+      "a": "exp1",
+      "b": "gab1",
+      "meaning": "MFRAT instead of Gabor - no tricks",
+      "diff": 0.0009999999999999998,
+      "ci95": [
+        2.735580379055912e-05,
+        0.0028754249429536072
+      ],
+      "share_a_better": 0.018
+    },
+    {
+      "a": "exp2",
+      "b": "gab2",
+      "meaning": "MFRAT instead of Gabor - with 7 templates",
+      "diff": 0.0006666666666666668,
+      "ci95": [
+        -4.362203973323678e-05,
+        0.0010382885720098198
+      ],
+      "share_a_better": 0.03
+    },
+    {
+      "a": "rloc",
+      "b": "gab3",
+      "meaning": "MFRAT instead of Gabor - full pipeline",
+      "diff": 0.000552549645630958,
+      "ci95": [
+        7.178482343906265e-05,
+        0.0009999999999999998
+      ],
+      "share_a_better": 0.006
+    },
+    {
+      "a": "gab3",
+      "b": "gab1",
+      "meaning": "both tricks, applied to the Gabor code",
+      "diff": -0.0011041369472182597,
+      "ci95": [
+        -0.0017674840226426303,
+        -3.095657276997133e-05
+      ],
+      "share_a_better": 0.979
+    },
+    {
+      "a": "rloc",
+      "b": "exp1",
+      "meaning": "both tricks, applied to the MFRAT code",
+      "diff": -0.0015515873015873015,
+      "ci95": [
+        -0.0036141823357482067,
+        -0.0003466999816356619
+      ],
+      "share_a_better": 0.997
+    },
+    {
+      "a": "align1",
+      "b": "rloc",
+      "meaning": "1 template instead of 7",
+      "diff": 0.0013863125763125762,
+      "ci95": [
+        0.00025829309883096873,
+        0.0022084998427084174
+      ],
+      "share_a_better": 0.001
+    },
+    {
+      "a": "han_morph",
+      "b": "han",
+      "meaning": "Paper 1: morphology instead of Sobel",
+      "diff": 0.03713833333333333,
+      "ci95": [
+        0.027666651458179634,
+        0.0475588173795387
+      ],
+      "share_a_better": 0.0
+    },
+    {
+      "a": "rloc",
+      "b": "oneway",
+      "meaning": "eq. 9's maximum over both directions",
+      "diff": -0.0004844117290682176,
+      "ci95": [
+        -0.0009713239884805493,
+        -4.9466342604023477e-05
+      ],
+      "share_a_better": 0.983
+    },
+    {
+      "a": "rloc",
+      "b": "shift1",
+      "meaning": "+/-2 shift search instead of +/-1",
+      "diff": -0.005218253968253968,
+      "ci95": [
+        -0.008737408107438404,
+        -0.0015576736221258533
+      ],
+      "share_a_better": 1.0
+    },
+    {
+      "a": "rloc",
+      "b": "first",
+      "meaning": "the matcher as published, against our first version",
+      "diff": -0.005781104108309991,
+      "ci95": [
+        -0.009696378247468058,
+        -0.0018313350413988773
+      ],
+      "share_a_better": 1.0
+    }
+  ],
+  "costs": {
+    "mfrat_ms": 4.2227300000377,
+    "gabor_ms": 3.4585449999819198,
+    "gabor_omega": 0.6,
+    "sobel_ms": 2.8302883334011617,
+    "morph_ms": 1.1535216666137178,
+    "enrol7_ms": 36.35790333355544,
+    "match_one_palm_ms": 2.8000520000205142,
+    "han_match_ms": 0.04271049998351373,
+    "rloc_template_bytes": 2317,
+    "rloc_template_bytes_one": 331,
+    "han_template_bytes": 256,
+    "batch_seconds_exp1": 29.047377586364746,
+    "batch_seconds_exp2": 171.15396809577942,
+    "batch_seconds_rloc": 176.28015518188477,
+    "batch_seconds_exp4": 184.87660384178162,
+    "batch_seconds_align1": 31.559064149856567,
+    "batch_seconds_gab1": 29.091358184814453,
+    "batch_seconds_gab2": 169.1850244998932,
+    "batch_seconds_gab3": 178.36699676513672,
+    "batch_seconds_oneway": 93.06457781791687,
+    "batch_seconds_shift1": 64.0198884010315,
+    "batch_seconds_first": 33.47067165374756,
+    "batch_seconds_han": 0.03815793991088867,
+    "batch_seconds_han_morph": 0.032337188720703125
+  },
+  "paper2_reference": {
+    "exp1": 0.004,
+    "exp2": 0.0036,
+    "rloc": 0.0016,
+    "exp4": 0.0027,
+    "compcode": 0.0047
+  },
+  "bootstrap_replicates": 1000,
+  "figures": {
+    "det_main.png": "det_main.png",
+    "det_ablation.png": "det_ablation.png",
+    "det_filter.png": "det_filter.png",
+    "det_matcher.png": "det_matcher.png",
+    "far_frr_rloc.png": "far_frr_rloc.png",
+    "far_frr_han.png": "far_frr_han.png",
+    "hist_main.png": "hist_main.png",
+    "eer_all.png": "eer_all.png"
+  }
+}
